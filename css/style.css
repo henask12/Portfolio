@@ -121,11 +121,134 @@ a {
   transition: color 0.5s ease-in-out, font-size 0.5s ease-in-out;
 }
 
+.about {
+  padding: 5.125rem 1.5rem;
+  border-top-right-radius: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-card h2 {
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 52px;
+color: #172B4D;
+width: 5ch;
+}
+
+.about-card p {
+  margin: 10px 0;
+  color: #344563;
+}
+
+.about-card h3 {
+  text-transform: uppercase;
+}
+
+.about-card ul {
+  margin: 1.3rem 0 1rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 11rem;
+  padding-top: 17px;
+  list-style: none;
+  margin: 0;
+  gap: 24px;
+  padding-left: 7px;
+  
+}
+
+.about .btn {
+  width: 162px;
+  height: 48px;
+  padding: 12px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.about-skill-card {
+  margin: 6px 0;
+  padding: 24px 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.about-skill-card ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.about-skill-card ul li{
+  width: 303px;
+height: 66.72px;
+
+background: #F7F7F9;
+border-radius: 8px;
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.about-skills-label {
+  align-items: center;
+  justify-content: space-between;
+  padding: 23px 40px 23px 0;
+  cursor: pointer;
+}
+
+.about-skills-label img{
+  transform: rotate(90deg);
+}
+
+.about-skills>ul>li {
+  align-items: center;
+  gap: 1rem;
+  border-radius: 8px;
+  margin: 12px 0;
+  padding: 9px 12px;
+}
+
+.label-framework {
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.label-framework-title {
+  align-items: center;
+  justify-content: space-between;
+  padding: 23px 40px 23px 0;
+  cursor: pointer;
+}
+
+.label-skill {
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.label-skill-title {
+  align-items: center;
+  justify-content: space-between;
+  padding: 23px 40px 23px 0;
+  cursor: pointer;
+}
+
+.about__icons__link img {
+  transition: transform 0.5s;
+}
+
+.about__icons__link img:hover {
+  transform: scale(1.5);
+}
+
 @media (min-width: 375px) {
   .navigation-bar a:hover {
     color: #396df2;
     font-size: 17px;
   }
+
 }
 
 @media (min-width: 768px) {
@@ -203,6 +326,49 @@ a {
 .card:nth-child(2),
 .card:nth-child(4) {
   flex-direction: row-reverse;
+}
+
+.about {
+  padding: 6rem;
+  flex-direction: row;
+  column-gap: 37px;
+  border-top-right-radius: 8rem;
+}
+
+.about-card {
+  flex-basis: 25rem;
+}
+
+
+.about-skills ul {
+  display: flex;
+  column-gap: 12px;
+}
+
+.about-skills>ul>li {
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: 7.6rem;
+}
+
+.about-skill-card {
+  flex-basis: 25rem;
+}
+.about-card h2{
+  width: 327px;
+height: 35px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 52px;
+color: #172B4D;
+display: flex;
+align-items: center;
+
+
+
+
 }
 }
 
@@ -337,6 +503,24 @@ letter-spacing: 0.03em;
   border-radius: 8px;
   cursor: pointer;
 }
+.about-button{
+  padding-top: 15px;
+}
+.about-button .btn {
+  width: 162px;
+  height: 48px;
+  padding: 12px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #396DF2;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
 
 .grid {
   display: grid;
@@ -349,3 +533,23 @@ letter-spacing: 0.03em;
   padding: 0;
 }
 
+.about-card h3{
+  color: #7F8CFF;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+}
+
+/* .about {
+  padding: 7.125rem;
+}
+
+.about-card {
+  flex-basis: 37rem;
+}
+
+.about-skill-card {
+  flex-basis: 38rem;
+} */
