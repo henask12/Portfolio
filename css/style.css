@@ -33,10 +33,17 @@ a {
   text-decoration: none;
 }
 
-ul {
+.intro-section ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.navigation-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
 }
 
 .flex {
@@ -140,7 +147,7 @@ ul {
     padding: 0;
   }
 
-  .navigation-bar li {
+  .navigation-bar  {
     margin: 0 16px;
     margin-bottom: 0;
   }
@@ -167,7 +174,38 @@ ul {
   .intro-section_link {
     margin: 0.7rem 0;
   }
+  
+.cards {
+  padding: 5rem;
 }
+
+.card {
+  align-items: center;
+  max-width: 1104px;
+  column-gap: 46px;
+  padding: 1.5rem;
+}
+
+.card-header {
+  padding: 1rem;
+  
+}
+
+.card img {
+  width: 50%;
+}
+
+.card:nth-child(1),
+.card:nth-child(3) {
+  flex-direction: row;
+}
+
+.card:nth-child(2),
+.card:nth-child(4) {
+  flex-direction: row-reverse;
+}
+}
+
 
 @media (max-width: 767px) {
   .navigation-bar {
@@ -186,7 +224,7 @@ ul {
     z-index: 50;
   }
 
-  .navigation-bar li {
+  .navigation-bar  {
     margin-bottom: 40px;
   }
 
@@ -206,3 +244,108 @@ ul {
     display: block;
   }
 }
+
+/* projects */
+
+.cards {
+  grid-template-rows: repeat(3, auto);
+  row-gap: 5.5rem;
+  justify-content: center;
+  padding: 7.125rem 1.5rem;
+}
+
+.card {
+  padding: 1rem 1rem 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 1rem;
+  border: 1px solid #dfe1e6;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-sub-header {
+  align-items: center;
+  column-gap: 2rem;
+  margin: 20px 0;
+}
+
+.card-sub-header ul {
+  margin: 0;
+  padding: 0;
+}
+
+.card-sub-header li {
+  margin-right: 2rem;
+
+color: #6B778C;
+}
+
+.card-header h2{
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  padding-top: 20px;
+  
+  color: #091E42;
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.works__card__title p{
+  color: #344563;
+  width: 75px;
+height: 24px;
+}
+
+.card-languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 1rem 0 1.8rem;
+}
+
+.card-languages p {
+  padding: 4px 12px;
+  border-radius: 8px;
+  color: #6070FF;
+  background: #ebebff;
+}
+
+.card-button .btn {
+  font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 24px;
+/* identical to box height, or 141% */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.03em;
+  width: 135px;
+  height: 48px;
+  padding: 12px;
+  border: 1px solid #6070ff;
+  color: #396DF2;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+}
+
+
+.ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
