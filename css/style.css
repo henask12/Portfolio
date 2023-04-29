@@ -36,7 +36,7 @@ a {
 .intro-section ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 10px;
 }
 
 .navigation-bar ul {
@@ -296,7 +296,7 @@ a {
   }
 
   .cards {
-    padding: 5rem;
+    padding: 10rem;
   }
 
   .card {
@@ -407,12 +407,12 @@ a {
 }
 
 .card {
-  padding: 1rem 1rem 1.5rem 1rem;
+  padding: 7.125rem 1.5rem 7.125rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border-radius: 1rem;
   border: 1px solid #dfe1e6;
+  background-color: rgba(247,247,249,255);
 }
 
 .card-sub-header {
@@ -450,13 +450,15 @@ a {
   flex-wrap: wrap;
   gap: 8px;
   margin: 1rem 0 1.8rem;
+  padding: 0px;
 }
 
-.card-languages p {
+.card-languages li {
   padding: 4px 12px;
   border-radius: 8px;
   color: #6070ff;
   background: #ebebff;
+  list-style: none;
 }
 
 .card-button .btn {
