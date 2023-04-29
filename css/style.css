@@ -130,7 +130,7 @@ a {
 }
 
 .about-card h2 {
-  font-family: 'Poppins', sans-serif ;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -152,7 +152,7 @@ a {
   padding-top: 17px;
   list-style: none;
   gap: 24px;
-  padding-left: 7px; 
+  padding-left: 7px;
 }
 
 .about .btn {
@@ -179,7 +179,7 @@ a {
 .about-skill-card ul li {
   width: 303px;
   height: 66.72px;
-  background: #F7F7F9;
+  background: #f7f7f9;
   border-radius: 8px;
   flex: none;
   order: 0;
@@ -193,7 +193,7 @@ a {
   cursor: pointer;
 }
 
-.about-skills-label img{
+.about-skills-label img {
   transform: rotate(90deg);
 }
 
@@ -227,11 +227,15 @@ a {
   cursor: pointer;
 }
 
-.about__icons__link img {
+.card img {
+  width: 100%;
+}
+
+.skills img {
   transition: transform 0.5s;
 }
 
-.about__icons__link img:hover {
+.skills img:hover {
   transform: scale(1.5);
 }
 
@@ -285,74 +289,74 @@ a {
   .intro-section_link {
     margin: 0.7rem 0;
   }
-  
-.cards {
-  padding: 5rem;
-}
 
-.card {
-  align-items: center;
-  max-width: 1104px;
-  column-gap: 46px;
-  padding: 1.5rem;
-}
+  .cards {
+    padding: 5rem;
+  }
 
-.card-header {
-  padding: 1rem;
-}
+  .card {
+    align-items: center;
+    max-width: 1104px;
+    column-gap: 46px;
+    padding: 1.5rem;
+  }
 
-.card img {
-  width: 50%;
-}
+  .card-header {
+    padding: 1rem;
+  }
 
-.card:nth-child(1),
-.card:nth-child(3) {
-  flex-direction: row;
-}
+  .card img {
+   width: 50%;
+  }
 
-.card:nth-child(2),
-.card:nth-child(4) {
-  flex-direction: row-reverse;
-}
+  .card:nth-child(1),
+  .card:nth-child(3) {
+    flex-direction: row;
+  }
 
-.about {
-  padding: 6rem;
-  flex-direction: row;
-  column-gap: 37px;
-  border-top-right-radius: 8rem;
-}
+  .card:nth-child(2),
+  .card:nth-child(4) {
+    flex-direction: row-reverse;
+  }
 
-.about-card {
-  flex-basis: 25rem;
-}
+  .about {
+    padding: 6rem;
+    flex-direction: row;
+    column-gap: 37px;
+    border-top-right-radius: 8rem;
+  }
 
-.about-skills ul {
-  display: flex;
-  column-gap: 12px;
-}
+  .about-card {
+    flex-basis: 25rem;
+  }
 
-.about-skills > ul > li {
-  flex-direction: column;
-  align-items: flex-start;
-  flex-basis: 7.6rem;
-}
+  .about-skills ul {
+    display: flex;
+    column-gap: 12px;
+  }
 
-.about-skill-card {
-  flex-basis: 25rem;
-}
+  .about-skills > ul > li {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 7.6rem;
+  }
 
-.about-card h2 {
-  width: 327px;
-  height: 35px;
-  font-family: 'Poppins', sans-serif ;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  color: #172b4d;
-  display: flex;
-  align-items: center;
-}
+  .about-skill-card {
+    flex-basis: 25rem;
+  }
+
+  .about-card h2 {
+    width: 327px;
+    height: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media (max-width: 767px) {
@@ -406,10 +410,6 @@ a {
   border: 1px solid #dfe1e6;
 }
 
-.card img {
-  width: 100%;
-}
-
 .card-sub-header {
   align-items: center;
   column-gap: 2rem;
@@ -427,7 +427,7 @@ a {
 }
 
 .card-header h2 {
-  font-family: 'Poppins', sans-serif ;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -489,7 +489,7 @@ a {
   border-radius: 8px;
   cursor: pointer;
   color: #396df2;
-  font-family: 'Poppins', sans-serif ;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -508,7 +508,7 @@ a {
 
 .about-card h3 {
   color: #7f8cff;
-  font-family: 'Poppins', sans-serif ;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
