@@ -257,6 +257,17 @@ a {
     color: #396df2;
     font-size: 17px;
   }
+
+  .card-sub-header {
+    align-items: center;
+    column-gap: 28px;
+    margin: 20px 0;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    flex-wrap: nowrap;  
+    width: 336px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -428,6 +439,9 @@ a {
   align-items: center;
   column-gap: 32px;
   margin: 20px 0;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
 }
 
 .card-sub-header ul {
@@ -435,11 +449,15 @@ a {
   padding: 0;
 }
 
+.card-description{
+  color: #344563;
+}
+
 .card-header h2 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 32px;
   line-height: 52px;
   padding-top: 20px;
   color: #091e42;
@@ -450,8 +468,16 @@ a {
 
 .card-sub-header p {
   color: #344563;
-  width: 75px;
-  height: 24px;
+  width: 55px;
+  height: 16px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+      display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 .card-languages {
