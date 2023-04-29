@@ -240,12 +240,14 @@ a {
   cursor: pointer;
 }
 
-.card img {
-  width: 100%;
-}
-
 .skills img {
   transition: transform 0.5s;
+}
+
+.card img {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .skills img:hover {
@@ -265,7 +267,6 @@ a {
     padding-top: 12px;
     flex-wrap: nowrap;
     width: 336px;
-    padding-top: 12px;
   }
 
   .card {
@@ -478,8 +479,8 @@ a {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin-inline-start: 0.5px;
+  margin-inline-end: 0.5px;
   padding-left: 10px;
 }
 
@@ -494,11 +495,6 @@ a {
 
 .card-button {
   padding-left: 10px;
-}
-
-.card img {
-  padding-left: 16px;
-  padding-right: 16px;
 }
 
 .card-button .btn {
