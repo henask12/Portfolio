@@ -43,7 +43,7 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 2rem;
+  gap: 32px;
 }
 
 .flex {
@@ -51,7 +51,7 @@ a {
 }
 
 .NavBar {
-  padding: 1rem 1.5rem;
+  padding: 16px 24px;
   align-items: center;
   justify-content: space-between;
   position: relative;
@@ -71,7 +71,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-origin: content-box;
-  border-bottom-left-radius: 5rem;
+  border-bottom-left-radius: 80px;
   top: 0;
   left: 0;
   width: 100%;
@@ -83,7 +83,7 @@ a {
   flex-direction: column;
   align-items: flex-start;
   position: relative;
-  padding: 6rem 1.5rem;
+  padding: 96px 24px;
   z-index: 10;
 }
 
@@ -102,7 +102,7 @@ a {
 }
 
 .intro-section p {
-  margin: 0.8rem 0;
+  margin: 12.8px 0;
   color: #344563;
 }
 
@@ -111,10 +111,10 @@ a {
 }
 
 .intro-section_icons {
-  margin: 0.5rem 0;
+  margin: 8px 0;
   align-items: center;
   justify-content: space-between;
-  width: 11rem;
+  width: 176px;
 }
 
 .navigation-bar a {
@@ -122,8 +122,8 @@ a {
 }
 
 .about {
-  padding: 5.125rem 1.5rem;
-  border-top-right-radius: 5rem;
+  padding: 82px 24px;
+  border-top-right-radius: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -145,7 +145,7 @@ a {
 }
 
 .about-card ul {
-  margin: 1.3rem 0 1rem;
+  margin: 21px 0 16px;
   align-items: center;
   justify-content: space-between;
   width: 11rem;
@@ -171,7 +171,7 @@ a {
 }
 
 .card-sub-header li {
-  margin-right: 2rem;
+  margin-right: 32px;
   color: #6b778c;
 }
 
@@ -212,7 +212,7 @@ a {
 
 .about-skills > ul > li {
   align-items: center;
-  gap: 1rem;
+  gap: 16px;
   border-radius: 8px;
   margin: 12px 0;
   padding: 9px 12px;
@@ -261,7 +261,7 @@ a {
 
 @media (min-width: 768px) {
   .NavBar {
-    padding: 1.5rem 8rem;
+    padding: 24px 128px;
   }
 
   .navigation-bar {
@@ -286,13 +286,13 @@ a {
 
   .intro-section::before {
     background-image: url(../images/headline-background.svg);
-    padding: 6rem;
-    border-bottom-left-radius: 8rem;
+    padding: 96px;
+    border-bottom-left-radius: 128px;
   }
 
   .intro-section {
-    padding: 10rem;
-    padding-right: 15rem;
+    padding: 160px;
+    padding-right: 240px;
   }
 
   .intro-section_title span {
@@ -300,22 +300,22 @@ a {
   }
 
   .intro-section_link {
-    margin: 0.7rem 0;
+    margin: 11.2px 0;
   }
 
   .cards {
-    padding: 10rem;
+    padding: 160px;
   }
 
   .card {
     align-items: center;
     max-width: 1104px;
     column-gap: 46px;
-    padding: 1.5rem;
+    padding: 24px;
   }
 
   .card-header {
-    padding: 1rem;
+    padding: 16px;
   }
 
   .card img {
@@ -336,11 +336,11 @@ a {
     padding: 6rem;
     flex-direction: row;
     column-gap: 37px;
-    border-top-right-radius: 8rem;
+    border-top-right-radius: 128px;
   }
 
   .about-card {
-    flex-basis: 25rem;
+    flex-basis: 400px;
   }
 
   .about-skills ul {
@@ -355,7 +355,7 @@ a {
   }
 
   .about-skill-card {
-    flex-basis: 25rem;
+    flex-basis: 117px;
   }
 
   .about-card h2 {
@@ -385,7 +385,7 @@ a {
     top: 0;
     left: 100%;
     transition: left 0.8s, visibility 0.8s, opacity 0.4s;
-    padding: 8rem 2rem;
+    padding: 128px 32px;
     z-index: 50;
     margin-bottom: 40px;
   }
@@ -410,21 +410,23 @@ a {
 .cards {
   grid-template-rows: repeat(3, auto);
   justify-content: center;
-  padding: 7.125rem 1.5rem;
+  padding: 114px 24px;
 }
 
 .card {
-  padding: 7.125rem 1.5rem 7.125rem 1.5rem;
+  margin: 24px 24px;
+  padding: 36px 48px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   border: 1px solid #dfe1e6;
-  background-color: rgba(247, 247, 249, 255);
+  background-color: #fff;
+  border-radius: 20px;
 }
 
 .card-sub-header {
   align-items: center;
-  column-gap: 2rem;
+  column-gap: 32px;
   margin: 20px 0;
 }
 
@@ -456,7 +458,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin: 1rem 0.25rem 1.8rem;
+  margin: 16px 4px 29px;
   padding: 1px;
 }
 
@@ -530,7 +532,7 @@ a {
 
 @keyframes btn-hover {
   100% {
-    box-shadow: inset 11rem 0 0 0 #6070ff, 0 8px 16px rgba(108, 116, 187, 0.24);
+    box-shadow: inset 176px 0 0 0 #6070ff, 0 8px 16px rgba(108, 116, 187, 0.24);
     color: #fff;
   }
 }
