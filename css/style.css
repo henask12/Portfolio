@@ -130,22 +130,18 @@ a {
 }
 
 .about-card h2 {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif ;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #172B4D;
+  color: #172b4d;
   width: 5ch;
 }
 
 .about-card p {
   margin: 10px 0;
   color: #344563;
-}
-
-.about-card h3 {
-  text-transform: uppercase;
 }
 
 .about-card ul {
@@ -155,7 +151,6 @@ a {
   width: 11rem;
   padding-top: 17px;
   list-style: none;
-  margin: 0;
   gap: 24px;
   padding-left: 7px; 
 }
@@ -173,17 +168,15 @@ a {
   margin: 6px 0;
   padding: 24px 0;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
-.about-skill-card ul{
+.about-skill-card ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.about-skill-card ul li{
+.about-skill-card ul li {
   width: 303px;
   height: 66.72px;
   background: #F7F7F9;
@@ -204,7 +197,7 @@ a {
   transform: rotate(90deg);
 }
 
-.about-skills>ul>li {
+.about-skills > ul > li {
   align-items: center;
   gap: 1rem;
   border-radius: 8px;
@@ -266,9 +259,6 @@ a {
     left: auto;
     transition: none;
     padding: 0;
-  }
-
-  .navigation-bar  {
     margin: 0 16px;
     margin-bottom: 0;
   }
@@ -341,7 +331,7 @@ a {
   column-gap: 12px;
 }
 
-.about-skills>ul>li {
+.about-skills > ul > li {
   flex-direction: column;
   align-items: flex-start;
   flex-basis: 7.6rem;
@@ -354,12 +344,12 @@ a {
 .about-card h2 {
   width: 327px;
   height: 35px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif ;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #172B4D;
+  color: #172b4d;
   display: flex;
   align-items: center;
 }
@@ -380,9 +370,6 @@ a {
     transition: left 0.8s, visibility 0.8s, opacity 0.4s;
     padding: 8rem 2rem;
     z-index: 50;
-  }
-
-  .navigation-bar  {
     margin-bottom: 40px;
   }
 
@@ -436,17 +423,17 @@ a {
 
 .card-sub-header li {
   margin-right: 2rem;
-  color: #6B778C;
+  color: #6b778c;
 }
 
 .card-header h2 {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif ;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   padding-top: 20px;
-  color: #091E42;
+  color: #091e42;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -468,7 +455,7 @@ a {
 .card-languages p {
   padding: 4px 12px;
   border-radius: 8px;
-  color: #6070FF;
+  color: #6070ff;
   background: #ebebff;
 }
 
@@ -485,7 +472,7 @@ a {
   height: 48px;
   padding: 12px;
   border: 1px solid #6070ff;
-  color: #396DF2;
+  color: #396df2;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -501,8 +488,8 @@ a {
   border: 1px solid #6070ff;
   border-radius: 8px;
   cursor: pointer;
-  color: #396DF2;
-  font-family: 'Poppins';
+  color: #396df2;
+  font-family: 'Poppins', sans-serif ;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -520,12 +507,13 @@ a {
 }
 
 .about-card h3 {
-  color: #7F8CFF;
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 24px;
+  color: #7f8cff;
+  font-family: 'Poppins', sans-serif ;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
 }
 
 .btn:hover {
