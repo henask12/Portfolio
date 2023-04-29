@@ -128,14 +128,15 @@ a {
   flex-direction: column;
   justify-content: center;
 }
+
 .about-card h2 {
   font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 52px;
-color: #172B4D;
-width: 5ch;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172B4D;
+  width: 5ch;
 }
 
 .about-card p {
@@ -156,8 +157,7 @@ width: 5ch;
   list-style: none;
   margin: 0;
   gap: 24px;
-  padding-left: 7px;
-  
+  padding-left: 7px; 
 }
 
 .about .btn {
@@ -182,16 +182,15 @@ width: 5ch;
   margin: 0;
   padding: 0;
 }
+
 .about-skill-card ul li{
   width: 303px;
-height: 66.72px;
-
-background: #F7F7F9;
-border-radius: 8px;
-
-flex: none;
-order: 0;
-flex-grow: 0;
+  height: 66.72px;
+  background: #F7F7F9;
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .about-skills-label {
@@ -248,7 +247,6 @@ flex-grow: 0;
     color: #396df2;
     font-size: 17px;
   }
-
 }
 
 @media (min-width: 768px) {
@@ -311,7 +309,6 @@ flex-grow: 0;
 
 .card-header {
   padding: 1rem;
-  
 }
 
 .card img {
@@ -339,7 +336,6 @@ flex-grow: 0;
   flex-basis: 25rem;
 }
 
-
 .about-skills ul {
   display: flex;
   column-gap: 12px;
@@ -354,24 +350,20 @@ flex-grow: 0;
 .about-skill-card {
   flex-basis: 25rem;
 }
-.about-card h2{
+
+.about-card h2 {
   width: 327px;
-height: 35px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 52px;
-color: #172B4D;
-display: flex;
-align-items: center;
-
-
-
-
+  height: 35px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172B4D;
+  display: flex;
+  align-items: center;
 }
 }
-
 
 @media (max-width: 767px) {
   .navigation-bar {
@@ -411,8 +403,6 @@ align-items: center;
   }
 }
 
-/* projects */
-
 .cards {
   grid-template-rows: repeat(3, auto);
   row-gap: 5.5rem;
@@ -446,29 +436,26 @@ align-items: center;
 
 .card-sub-header li {
   margin-right: 2rem;
-
-color: #6B778C;
+  color: #6B778C;
 }
 
-.card-header h2{
-  
+.card-header h2 {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   padding-top: 20px;
-  
   color: #091E42;
-  
   flex: none;
   order: 0;
   flex-grow: 0;
 }
-.works__card__title p{
+
+.card-sub-header p {
   color: #344563;
   width: 75px;
-height: 24px;
+  height: 24px;
 }
 
 .card-languages {
@@ -487,14 +474,13 @@ height: 24px;
 
 .card-button .btn {
   font-style: normal;
-font-weight: 500;
-font-size: 17px;
-line-height: 24px;
-/* identical to box height, or 141% */
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.03em;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
   width: 135px;
   height: 48px;
   padding: 12px;
@@ -503,9 +489,11 @@ letter-spacing: 0.03em;
   border-radius: 8px;
   cursor: pointer;
 }
-.about-button{
+
+.about-button {
   padding-top: 15px;
 }
+
 .about-button .btn {
   width: 162px;
   height: 48px;
@@ -521,11 +509,9 @@ letter-spacing: 0.03em;
   line-height: 24px;
 }
 
-
 .grid {
   display: grid;
 }
-
 
 .ul {
   list-style: none;
@@ -533,7 +519,7 @@ letter-spacing: 0.03em;
   padding: 0;
 }
 
-.about-card h3{
+.about-card h3 {
   color: #7F8CFF;
   font-family: 'Poppins';
 font-style: normal;
