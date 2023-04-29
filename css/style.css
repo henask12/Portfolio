@@ -267,6 +267,17 @@ a {
     flex-wrap: nowrap;
     width: 336px;
   }
+
+  .card {
+    margin: 72px 63px;
+    padding: 42px 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #dfe1e6;
+    background-color: #fff;
+    border-radius: 20px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -423,32 +434,23 @@ a {
   padding: 114px 24px;
 }
 
-.card {
-  margin: 24px 24px;
-  padding: 36px 48px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  border: 1px solid #dfe1e6;
-  background-color: #fff;
-  border-radius: 20px;
-}
-
 .card-sub-header {
   align-items: center;
   column-gap: 32px;
   margin: 20px 0;
   flex-direction: row;
-  padding: 0.5px;
+  padding-right: 0.5px;
 }
 
 .card-sub-header ul {
   margin: 0;
   padding: 0;
+  padding-left: 10px;
 }
 
 .card-description {
   color: #344563;
+  padding-left: 10px;
 }
 
 .card-header h2 {
@@ -462,6 +464,7 @@ a {
   flex: none;
   order: 0;
   flex-grow: 0;
+  padding-left: 10px;
 }
 
 .card-sub-header p {
@@ -476,6 +479,7 @@ a {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  padding-left: 10px;
 }
 
 .card-languages {
@@ -484,6 +488,11 @@ a {
   gap: 8px;
   margin: 16px 4px 29px;
   padding: 1px;
+  padding-left: 10px;
+}
+
+.card-button {
+  padding-left: 10px;
 }
 
 .card-button .btn {
