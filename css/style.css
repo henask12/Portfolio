@@ -170,6 +170,11 @@ a {
   list-style: none;
 }
 
+.card-sub-header li {
+  margin-right: 2rem;
+  color: #6b778c;
+}
+
 .about-skill-card ul {
   list-style: none;
   margin: 0;
@@ -306,7 +311,7 @@ a {
   }
 
   .card img {
-   width: 50%;
+    width: 50%;
   }
 
   .card:nth-child(1),
@@ -419,11 +424,6 @@ a {
 .card-sub-header ul {
   margin: 0;
   padding: 0;
-}
-
-.card-sub-header li {
-  margin-right: 2rem;
-  color: #6b778c;
 }
 
 .card-header h2 {
