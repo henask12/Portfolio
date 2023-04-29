@@ -181,6 +181,14 @@ a {
   padding: 0;
 }
 
+.card-languages li {
+  padding: 4px 12px;
+  border-radius: 8px;
+  color: #6070ff;
+  background: #ebebff;
+  list-style: none;
+}
+
 .about-skill-card ul li {
   width: 303px;
   height: 66.72px;
@@ -401,7 +409,6 @@ a {
 
 .cards {
   grid-template-rows: repeat(3, auto);
-  row-gap: 5.5rem;
   justify-content: center;
   padding: 7.125rem 1.5rem;
 }
@@ -412,7 +419,7 @@ a {
   flex-direction: column;
   align-items: flex-start;
   border: 1px solid #dfe1e6;
-  background-color: rgba(247,247,249,255);
+  background-color: rgba(247, 247, 249, 255);
 }
 
 .card-sub-header {
@@ -449,16 +456,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin: 1rem 0 1.8rem;
+  margin: 1rem 0rem 1.8rem;
   padding: 0px;
-}
-
-.card-languages li {
-  padding: 4px 12px;
-  border-radius: 8px;
-  color: #6070ff;
-  background: #ebebff;
-  list-style: none;
 }
 
 .card-button .btn {
