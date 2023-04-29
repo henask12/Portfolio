@@ -542,14 +542,20 @@ font-size: 16px;
 line-height: 24px;
 }
 
-/* .about {
-  padding: 7.125rem;
+.btn:hover {
+  animation-name: btn-hover;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
 }
 
-.about-card {
-  flex-basis: 37rem;
+.btn:focus {
+  background: #2230d2;
+  color: #fff;
 }
 
-.about-skill-card {
-  flex-basis: 38rem;
-} */
+@keyframes btn-hover {
+  100% {
+    box-shadow: inset 11rem 0 0 0 #6070ff, 0 8px 16px rgba(108, 116, 187, 0.24);
+    color: #fff;
+  }
+}
