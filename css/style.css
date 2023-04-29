@@ -261,16 +261,16 @@ a {
   .card-sub-header {
     align-items: center;
     column-gap: 28px;
-    margin: 20px 0;
     flex-direction: row;
-    padding: 0.5px;
+    padding-top: 12px;
     flex-wrap: nowrap;
     width: 336px;
+    padding-top: 12px;
   }
 
   .card {
-    margin: 72px 63px;
-    padding: 42px 2px;
+    margin: 50px 30px;
+    padding: 24px 1px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -333,6 +333,15 @@ a {
     max-width: 1104px;
     column-gap: 46px;
     padding: 24px;
+  }
+
+  .card-sub-header {
+    align-items: center;
+    column-gap: 32px;
+    margin: 20px 0;
+    flex-direction: row;
+    padding-right: 0.5px;
+    padding-top: 12px;
   }
 
   .card-header {
@@ -434,14 +443,6 @@ a {
   padding: 114px 24px;
 }
 
-.card-sub-header {
-  align-items: center;
-  column-gap: 32px;
-  margin: 20px 0;
-  flex-direction: row;
-  padding-right: 0.5px;
-}
-
 .card-sub-header ul {
   margin: 0;
   padding: 0;
@@ -459,7 +460,7 @@ a {
   font-weight: 700;
   font-size: 32px;
   line-height: 52px;
-  padding-top: 20px;
+  padding-top: 12px;
   color: #091e42;
   flex: none;
   order: 0;
@@ -493,6 +494,11 @@ a {
 
 .card-button {
   padding-left: 10px;
+}
+
+.card img {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .card-button .btn {
