@@ -263,9 +263,8 @@ a {
     column-gap: 28px;
     margin: 20px 0;
     flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    flex-wrap: nowrap;  
+    padding: 0.5px;
+    flex-wrap: nowrap;
     width: 336px;
   }
 }
@@ -440,8 +439,7 @@ a {
   column-gap: 32px;
   margin: 20px 0;
   flex-direction: row;
-  align-items: center;
-  padding: 0px;
+  padding: 0.5px;
 }
 
 .card-sub-header ul {
@@ -449,7 +447,7 @@ a {
   padding: 0;
 }
 
-.card-description{
+.card-description {
   color: #344563;
 }
 
@@ -473,11 +471,11 @@ a {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-      display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 .card-languages {
