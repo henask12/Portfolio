@@ -279,6 +279,23 @@ a {
     background-color: #fff;
     border-radius: 20px;
   }
+
+  .languages{
+    float: left;
+    margin: 16px 4px 29px;
+    padding: 1px;
+    padding-left: 10px;
+  }
+
+  .languages li {
+    float: left;
+    border-radius: 8px;
+    margin-left: 10px;
+    padding: 4px 12px;
+    color: #6070ff;
+    background: #ebebff;
+    list-style: none;
+  }
 }
 
 @media (min-width: 768px) {
