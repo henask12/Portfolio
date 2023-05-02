@@ -279,6 +279,57 @@ a {
     background-color: #fff;
     border-radius: 20px;
   }
+  
+  .contact{
+    background-color: #6070ff;
+    align-content: center;
+    border-top-left-radius: 5rem;
+
+  }
+
+  .contact-title {
+    align-content: center;
+    margin: 50px 25px;
+  }
+
+  .contact-title h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-left: 4rem;
+    
+  }
+
+  .contact-title p {
+    color: white;
+    padding-top: 1.5rem;
+    font-style: normal;
+    font-weight: 250;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .contact ul {
+    list-style: none;
+  }
+
+  .contact input, textarea {
+    background: #FFFFFF;
+    border: 1px solid #CFD8DC;
+    border-radius: 8px;
+    padding: 10px;
+    padding-right: 150px;
+  }
+
+  .contact li {
+    padding-top: 8px;
+  }
+  
 }
 
 @media (min-width: 768px) {
