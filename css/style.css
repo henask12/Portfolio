@@ -279,7 +279,7 @@ a {
     background-color: #fff;
     border-radius: 20px;
   }
-  
+
 }
 
 @media (min-width: 768px) {
@@ -573,7 +573,7 @@ a {
   }
 }
 
- .contact::before {
+.contact::before {
   content: "";
   position: absolute;
   background-color: #6070ff;
@@ -592,7 +592,7 @@ a {
 @media (min-width: 375px) {
   .contact::before {
     background-image: url("../images/contact-form-shapes-mobile.svg");
-}
+  }
 
   .contact {
     position: relative;
@@ -647,7 +647,7 @@ a {
   .contact-title h2 {
     color: #fff;
     text-align: center;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -658,7 +658,7 @@ a {
     color: #ebebff;
     text-align: center;
     margin: 0.8rem 0 0.8rem;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -666,20 +666,21 @@ a {
     width: 327px;
     height: 137px;
   }
+
   .svg-container {
     display: flex;
     justify-content: center;
     padding-bottom: 15px;
   }
-  
+
   svg {
     display: block;
     margin: auto;
-    left: calc(50% - 134px/2 - 0.5px);
+    left: calc(50% - 134px / 2 - 0.5px);
     border-radius: 10px;
-    bottom: 8px
+    bottom: 8px;
   }
-  
+
 }
 
 .svg-container {
