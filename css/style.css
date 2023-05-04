@@ -493,8 +493,8 @@ a {
   height: 24px;
   left: 24px;
   right: 78px;
-  top: calc(50% - 24px/2);
-  font-family: 'Poppins';
+  top: calc(50% - 24px / 2);
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -510,8 +510,7 @@ a {
   border-radius: 8px;
   margin: 12px 0;
   padding: 9px 12px;
-  background: #F7F7F9;
-  border-radius: 8px;
+  background: #f7f7f9;
 }
 
 .label-framework {
@@ -529,8 +528,8 @@ a {
   height: 24px;
   left: 24px;
   right: 78px;
-  top: calc(50% - 24px/2);
-  font-family: 'Poppins';
+  top: calc(50% - 24px / 2);
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -555,8 +554,8 @@ a {
   height: 24px;
   left: 24px;
   right: 78px;
-  top: calc(50% - 24px/2);
-  font-family: 'Poppins';
+  top: calc(50% - 24px / 2);
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
