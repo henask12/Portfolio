@@ -253,7 +253,7 @@ a {
 
 .btn:focus {
   background: #2230d2;
-  color: #fff;
+  color: #f9f9f9;
 }
 
 @keyframes btn-hover {
@@ -442,10 +442,13 @@ a {
   border: 1px solid #6070ff;
   border-radius: 8px;
   cursor: pointer;
+  color: #396df2;
+  font-weight: 500;
+  font-size: 17px
 }
 
 .about-card h2 {
-  width: 5ch;
+  width: 10rem;
 }
 
 .about-card p {
@@ -454,6 +457,7 @@ a {
 
 .about-card h3 {
   text-transform: uppercase;
+  color: #7f8cff;
 }
 
 .skills {
