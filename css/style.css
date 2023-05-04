@@ -271,9 +271,9 @@ a {
 
   .card-sub-header {
     align-items: center;
-    column-gap: 28px;
+    column-gap: 4px;
     flex-direction: row;
-    padding-top: 12px;
+    padding-top: 2px;
     flex-wrap: nowrap;
     width: 336px;
   }
@@ -353,19 +353,18 @@ a {
   }
 
   .card {
-    align-items: center;
     max-width: 1104px;
-    column-gap: 46px;
-    padding: 24px;
+    column-gap: 11px;
+    padding: 2px;
   }
 
   .card-sub-header {
     align-items: center;
     column-gap: 32px;
-    margin: 20px 0;
+    margin: 4px 0;
     flex-direction: row;
     padding-right: 0.5px;
-    padding-top: 12px;
+    padding-top: 2px;
   }
 
   .card-header {
@@ -374,6 +373,9 @@ a {
 
   .card img {
     width: 50%;
+    padding-left: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   .card:nth-child(1),
@@ -448,7 +450,11 @@ a {
 }
 
 .about-card h2 {
-  width: 10rem;
+  width: 21rem;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
 }
 
 .about-card p {
@@ -483,12 +489,29 @@ a {
   cursor: pointer;
 }
 
+.about-skills-label h3 {
+  height: 24px;
+  left: 24px;
+  right: 78px;
+  top: calc(50% - 24px/2);
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #344563;
+}
+
 .skills-bottom li {
   align-items: center;
   gap: 1rem;
   border-radius: 8px;
   margin: 12px 0;
   padding: 9px 12px;
+  background: #F7F7F9;
+  border-radius: 8px;
 }
 
 .label-framework {
@@ -502,6 +525,21 @@ a {
   cursor: pointer;
 }
 
+.label-framework-title h3 {
+  height: 24px;
+  left: 24px;
+  right: 78px;
+  top: calc(50% - 24px/2);
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #344563;
+}
+
 .label-skill {
   border-bottom: 1px solid #dfe1e6;
 }
@@ -511,6 +549,21 @@ a {
   justify-content: space-between;
   padding: 23px 40px 23px 0;
   cursor: pointer;
+}
+
+.label-skill-title h3 {
+  height: 24px;
+  left: 24px;
+  right: 78px;
+  top: calc(50% - 24px/2);
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #344563;
 }
 
 .contact::before {
