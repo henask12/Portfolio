@@ -122,10 +122,6 @@ a {
   width: 176px;
 }
 
-.navigation-bar a {
-  transition: color 0.5s ease-in-out, font-size 0.5s ease-in-out;
-}
-
 .card-sub-header li {
   margin-right: 32px;
   color: #6b778c;
@@ -147,10 +143,6 @@ a {
 
 .about-skills-label img {
   transform: rotate(90deg);
-}
-
-.skills li a img {
-  transition: transform 0.5s;
 }
 
 .skills img:hover {
@@ -315,7 +307,6 @@ a {
     background: none;
     position: static;
     left: auto;
-    transition: none;
     padding: 0;
     margin: 0 16px;
     margin-bottom: 0;
@@ -406,7 +397,6 @@ a {
     position: fixed;
     top: 0;
     left: 100%;
-    transition: left 0.8s, visibility 0.8s, opacity 0.4s;
     padding: 128px 32px;
     z-index: 50;
     margin-bottom: 40px;
@@ -417,7 +407,6 @@ a {
     font-weight: 600;
     line-height: 44px;
     color: #fff;
-    transition: color 1s;
   }
 
   .navigation-bar li a:hover {
