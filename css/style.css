@@ -316,6 +316,18 @@ a {
     display: none;
   }
 
+  .navigation-bar li a {
+    transition: all 0.3s ease-out;  
+  }
+
+  .navigation-bar li a:hover {
+    font-size: larger;
+  }
+  
+  .navigation-bar li a:focus {
+    font-size: larger;
+  }
+
   .intro-section::before {
     background-image: url(../images/headline-background.svg);
     padding: 96px;
@@ -382,6 +394,10 @@ a {
   .new-container {
     margin-top: 219px;
     width: 920px;
+  }
+
+  .opacity-animation {
+
   }
 }
 
