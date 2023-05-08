@@ -1,6 +1,5 @@
 <a name="readme-top"></a>
 
-
 <div align="center">
 
   <h3><b>Portfolio Project</b></h3>
@@ -59,7 +58,7 @@ This **Portfolio Project** showcases my skills in HTML5 and CSS by presenting a 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Live demo is not available for now
+> https://henask12.github.io/Portfolio/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -77,7 +76,6 @@ In order to run this project you need: you need to know the basic of HTML5, CSS,
 
 Clone this repository to your desired folder: https://github.com/henask12/Portfolio.git
 
-
 ### Install
 
 Install this project with: install HTMLHint and styleLint
@@ -89,7 +87,6 @@ To run the project, execute the following command: just need a web brwosser
 ### Run tests
 
 To run tests, run the following command: you just need a simple web browser to run this project for a test
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -110,6 +107,9 @@ To run tests, run the following command: you just need a simple web browser to r
 ## 🔭 Future Features <a name="future-features"></a>
 
 -   [ ] **Display Landing Porfolio page**
+-   [ ] **Display Works Porfolio page**
+-   [ ] **Display About Me page**
+-   [ ] **Display Contact Me page**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
