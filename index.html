@@ -6,32 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <title>Henok Mekonnen | Portfolio</title>
 </head>
 
 <body>
-  <div class="container">
+  <div class="container-flex">
     <header class="header background">
-      <nav class="NavBar flex">
+      <nav class="NavBar flex fixed-top ">
         <a href="index.html">
           <img src="./images/logo.svg" alt="my logo">
         </a>
         <div class="navigation-bar">
           <ul class="navigation-bar flex">
             <li>
-              <a href="#" >Portfolio</a>
+              <a  href="#intro" >Portfolio</a>
             </li>
             <li >
-              <a href="#" >About</a>
+              <a href="#about" >About</a>
             </li>
             <li>
-              <a href="#" >Contact</a>
+              <a href="#contact" >Contact</a>
             </li>
           </ul>
         </div>
         <img class="navigation-bar_hamburger" src="./images/hamburguer.png" alt="hamburguer icon" />
       </nav>
     </header>
+
 
     <section class="intro-section flex">
       <div class="new-container">
@@ -66,7 +68,7 @@
     </div>
     </section>
 
-    <section class="cards ul grid" >
+    <section id="intro" class="cards ul grid" >
         <div class="card flex background">
           <img src="./images/tonic-project-desktop.svg" alt="tonic project" />
           <div class="card-header">
@@ -233,7 +235,7 @@
         </div>
     </section>
 
-    <section class="about background flex">
+    <section id="about" class="about background flex">
       <div class="about-card">
         <h2>
           About Myself
@@ -318,7 +320,7 @@
       </ul>
     </section>
 
-    <section class="contact background flex">
+    <section id="contact" class="contact background flex">
       <div class="contact-container">
         <div class="contact-title">
           <h2>Contact me</h2>

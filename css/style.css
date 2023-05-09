@@ -30,7 +30,7 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .intro-section ul {
@@ -168,6 +168,11 @@ a {
   margin: 0;
   padding: 0;
   padding-left: 10px;
+}
+
+.card-header{
+  background-color: rgba(255, 255, 255, 0.03) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13) !important;
 }
 
 .card-description {
@@ -369,6 +374,8 @@ a {
 
   .card-header {
     padding: 16px;
+    background-color: rgba(255, 255, 255, 0.03) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.13) !important;
   }
 
   .card img {
@@ -418,6 +425,7 @@ a {
     line-height: 44px;
     color: #fff;
     transition: color 1s;
+    text-decoration: none !important;
   }
 
   .navigation-bar li a:hover {
