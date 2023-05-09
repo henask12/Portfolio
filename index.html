@@ -34,7 +34,6 @@
       </nav>
     </header>
 
-
     <section class="intro-section flex">
       <div class="new-container">
       <h1 class="intro-section_title ">
@@ -321,27 +320,28 @@
     </section>
 
     <section id="contact" class="contact background flex">
-      <div class="contact-container">
+      <div >
         <div class="contact-title">
           <h2>Contact me</h2>
           <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
             I’d love to help with it!</p>
         </div>
         <form action="https://formspree.io/f/xyyaojgk" method="post">
-          <ul class="ul">
-            <li>
-              <input type="text" name="name" id="name" class="input" placeholder="Full Name" maxlength="30" required>
-            </li>
-            <li>
-              <input type="email" name="email" id="email" class="input" placeholder="Email Address" required>
-            </li>
-            <li>
-              <textarea name="" id="" cols="30" rows="10" placeholder="Write your message here..." maxlength="500" required></textarea>
-            </li>
-            <li>
-              <input type="submit" class="contact-btn" value="Get in touch">
-            </li>
-          </ul>
+      
+
+          <div class="mb-3 mt-3 ">
+          <input  type="name" class="form-control input " id="name" placeholder="Full name  " name="email" required maxlength="30">
+        </div>
+          <div class="mb-3 mt-3">
+          <input type="email" class="form-control" id="email" placeholder="  Write your email" name="email" required >
+        </div>
+
+            <div  class="mb-3 mt-3 ">
+              <textarea class="form-control" rows="5" id="comment" name="text" placeholder="write your text ..."></textarea>
+            </div>
+            <div class="mb-3 mt-3 d-flex justify-content-center">
+               <button type="submit" class="btn contact-btn btn-light ">Submit</button>
+            </div>
         </form>
       </div>
       

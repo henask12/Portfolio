@@ -104,7 +104,7 @@ a {
 .intro-section p {
   margin: 12.8px 0;
   color: #344563;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -170,7 +170,7 @@ a {
   padding-left: 10px;
 }
 
-.card-header{
+.card-header {
   background-color: rgba(255, 255, 255, 0.03) !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.13) !important;
 }
@@ -181,7 +181,7 @@ a {
 }
 
 .card-header h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -502,7 +502,7 @@ a {
   left: 24px;
   right: 78px;
   top: calc(50% - 24px / 2);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -537,7 +537,7 @@ a {
   left: 24px;
   right: 78px;
   top: calc(50% - 24px / 2);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -563,7 +563,7 @@ a {
   left: 24px;
   right: 78px;
   top: calc(50% - 24px / 2);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -608,7 +608,7 @@ a {
   padding: 0 1rem;
 }
 
-.contact-container form li textarea {
+.contact-container form textarea {
   width: 100%;
   border-radius: 8px;
   background: #fff;
@@ -688,9 +688,9 @@ a {
     align-items: center;
   }
 
-  .contact-container form li input,
-  .contact-container form li textarea {
-    max-width: 570px;
+  .contact-container form input,
+  .contact-container form textarea {
+    max-width: 800px;
     font-size: 17px;
     line-height: 20px;
   }
@@ -744,9 +744,8 @@ a {
     align-items: center;
   }
 
-  .input,
-  .contact-container form li textarea {
-    width: 450px;
+  .input {
+    width: 700px !important;
     font-size: 17px;
     line-height: 20px;
   }
