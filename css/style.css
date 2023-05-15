@@ -59,7 +59,7 @@ a {
 
 .navigation-bar_hamburger {
   cursor: pointer;
-  z-index: 100;
+  z-index: 5;
 }
 
 .intro-section::before {
@@ -84,7 +84,7 @@ a {
   align-items: flex-start;
   position: relative;
   padding: 96px 24px;
-  z-index: 10;
+  z-index: 3;
 }
 
 .intro-section_title {
@@ -269,6 +269,55 @@ a {
     font-size: 17px;
   }
 
+  #hidden-menu-background {
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #6070FF;
+    mix-blend-mode: multiply;
+  }
+
+  #hidden-menu {
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(6px)
+  }
+
+  #menu-options {
+    list-style: none;
+    flex-direction: column;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44px;
+    gap: 40px;
+    padding-left: 28px;
+    padding-right: 38px;
+  }
+
+  #menu-options li a, #close-btn {
+    color: #dfe1e6;
+    opacity: 1;
+  }
+
+  #close-btn {
+    max-width: 12px;
+  }
+  
+  #close-btn-list {
+    text-align: right;
+  }
+
   .card-sub-header {
     align-items: center;
     column-gap: 4px;
@@ -322,6 +371,10 @@ a {
   }
 
   .navigation-bar_hamburger {
+    display: none;
+  }
+
+  #hidden-menu {
     display: none;
   }
 
@@ -408,7 +461,7 @@ a {
     left: 100%;
     transition: left 0.8s, visibility 0.8s, opacity 0.4s;
     padding: 128px 32px;
-    z-index: 50;
+    z-index: 3;
     margin-bottom: 40px;
   }
 
@@ -585,7 +638,7 @@ a {
 .contact {
   position: relative;
   padding: 6.4375rem 1.5rem 1.5rem;
-  z-index: 10;
+  z-index: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -715,6 +768,10 @@ a {
   .contact {
     padding: 8.875rem;
     padding-bottom: 7.9rem;
+  }
+
+  #hidden-menu {
+    display: none;
   }
 
   .contact-title h2 {
