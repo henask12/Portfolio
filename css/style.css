@@ -104,7 +104,7 @@ a {
 .intro-section p {
   margin: 12.8px 0;
   color: #344563;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -176,7 +176,7 @@ a {
 }
 
 .card-header h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -270,6 +270,8 @@ a {
   }
 
   #hidden-menu-background {
+    display: none;
+    opacity: 0;
     height: 100vh;
     width: 100vw;
     z-index: 10;
@@ -278,11 +280,14 @@ a {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #6070FF;
+    background-color: #6070ff;
     mix-blend-mode: multiply;
+    transition: opacity 2s ease-in;
   }
 
   #hidden-menu {
+    display: none;
+    opacity: 0;
     height: 100vh;
     width: 100vw;
     z-index: 10;
@@ -291,7 +296,8 @@ a {
     bottom: 0;
     left: 0;
     right: 0;
-    backdrop-filter: blur(6px)
+    backdrop-filter: blur(6px);
+    transition: opacity 2s ease-in;
   }
 
   #menu-options {
@@ -305,15 +311,16 @@ a {
     padding-right: 38px;
   }
 
-  #menu-options li a, #close-btn {
-    color: #dfe1e6;
+  #menu-options li a,
+  #close-btn {
+    color: #fff;
     opacity: 1;
   }
 
   #close-btn {
     max-width: 12px;
   }
-  
+
   #close-btn-list {
     text-align: right;
   }
@@ -374,7 +381,8 @@ a {
     display: none;
   }
 
-  #hidden-menu {
+  #hidden-menu,
+  #hidden-menu-background {
     display: none;
   }
 
@@ -547,7 +555,7 @@ a {
   left: 24px;
   right: 78px;
   top: calc(50% - 24px / 2);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -582,7 +590,7 @@ a {
   left: 24px;
   right: 78px;
   top: calc(50% - 24px / 2);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -608,7 +616,7 @@ a {
   left: 24px;
   right: 78px;
   top: calc(50% - 24px / 2);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
