@@ -282,7 +282,8 @@ a {
     right: 0;
     background-color: #6070ff;
     mix-blend-mode: multiply;
-    transition: opacity 2s ease-in;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
   }
 
   #hidden-menu {
@@ -297,7 +298,9 @@ a {
     left: 0;
     right: 0;
     backdrop-filter: blur(6px);
-    transition: opacity 2s ease-in;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+   
   }
 
   #menu-options {
@@ -305,7 +308,7 @@ a {
     flex-direction: column;
     font-size: 32px;
     font-weight: 600;
-    line-height: 44px;
+    line-height: 30px;
     gap: 40px;
     padding-left: 28px;
     padding-right: 38px;
@@ -396,8 +399,8 @@ a {
   }
 
   .intro-section {
-    padding-right: 240px;
-    padding-left: 240px;
+    padding-right: 100px;
+    padding-left: 100px;
   }
 
   .intro-section_title span {
@@ -451,7 +454,7 @@ a {
 
   .new-container {
     margin-top: 219px;
-    width: 920px;
+    /* width: 920px; */
   }
 }
 
@@ -763,6 +766,11 @@ a {
 @media (min-width: 1440px) {
   .about {
     padding: 7.125rem;
+  }
+
+  .intro-section {
+    padding-right: 240px;
+    padding-left: 240px;
   }
 
   .about-card {
