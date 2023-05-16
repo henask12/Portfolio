@@ -41,3 +41,51 @@ function handleResize() {
 }
 
 window.addEventListener("resize", handleResize);
+
+// Project data
+const projects = [
+    {
+        name: "Tonic",
+        feature: "CANOPY",
+        backround: "Back End Dev",
+        year: "2015",
+        description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+        featuredImage: "./images/tonic-project-desktop.svg",
+        technologies: ["html", "css", "javascript"],
+        liveLink: "https://example.com/tonic",
+        sourceLink: "https://github.com/example/tonic"
+    },
+    {
+        name: "Multi-Post Stories",
+        feature: "CANOPY",
+        backround: "Back End Dev",
+        year: "2015",
+        description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+        featuredImage: "./images/multi-post-project.png",
+        technologies: ["html", "css", "javascript"],
+        liveLink: "https://example.com/multi-post-stories",
+        sourceLink: "https://github.com/example/multi-post-stories"
+    },
+    {
+        name: "Tonic Orange",
+        feature: "CANOPY",
+        backround: "Back End Dev",
+        year: "2015",
+        description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+        featuredImage: "./images/tonic-orange.png",
+        technologies: ["html", "css", "javascript"],
+        liveLink: "https://example.com/tonic-orange",
+        sourceLink: "https://github.com/example/tonic-orange"
+    },
+    {
+        name: "Professional Art Printing",
+        feature: "CANOPY",
+        backround: "Back End Dev",
+        year: "2015",
+        description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+        featuredImage: "./images/prof-art-project.png",
+        technologies: ["html", "css", "javascript"],
+        liveLink: "https://example.com/professional-art-printing",
+        sourceLink: "https://github.com/example/professional-art-printing"
+    }
+];
