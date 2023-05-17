@@ -59,7 +59,7 @@ a {
 
 .navigation-bar_hamburger {
   cursor: pointer;
-  z-index: 100;
+  z-index: 5;
 }
 
 .intro-section::before {
@@ -84,7 +84,7 @@ a {
   align-items: flex-start;
   position: relative;
   padding: 96px 24px;
-  z-index: 10;
+  z-index: 3;
 }
 
 .intro-section_title {
@@ -104,7 +104,7 @@ a {
 .intro-section p {
   margin: 12.8px 0;
   color: #344563;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -176,7 +176,7 @@ a {
 }
 
 .card-header h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -269,6 +269,62 @@ a {
     font-size: 17px;
   }
 
+  #hidden-menu-background {
+    display: none;
+    opacity: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #6070ff;
+    mix-blend-mode: multiply;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  #hidden-menu {
+    display: none;
+    opacity: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(6px);
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  #menu-options {
+    list-style: none;
+    flex-direction: column;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 30px;
+    gap: 40px;
+    padding-left: 28px;
+    padding-right: 38px;
+  }
+
+  #menu-options li a,
+  #close-btn {
+    color: #fff;
+    opacity: 1;
+  }
+
+  #close-btn {
+    max-width: 12px;
+  }
+
+  #close-btn-list {
+    text-align: right;
+  }
+
   .card-sub-header {
     align-items: center;
     column-gap: 4px;
@@ -325,6 +381,11 @@ a {
     display: none;
   }
 
+  #hidden-menu,
+  #hidden-menu-background {
+    display: none;
+  }
+
   .intro-section::before {
     background-image: url(../images/headline-background.svg);
     padding: 96px;
@@ -335,8 +396,8 @@ a {
   }
 
   .intro-section {
-    padding-right: 240px;
-    padding-left: 240px;
+    padding-right: 100px;
+    padding-left: 100px;
   }
 
   .intro-section_title span {
@@ -390,7 +451,6 @@ a {
 
   .new-container {
     margin-top: 219px;
-    width: 920px;
   }
 }
 
@@ -408,7 +468,7 @@ a {
     left: 100%;
     transition: left 0.8s, visibility 0.8s, opacity 0.4s;
     padding: 128px 32px;
-    z-index: 50;
+    z-index: 3;
     margin-bottom: 40px;
   }
 
@@ -494,7 +554,7 @@ a {
   left: 24px;
   right: 78px;
   top: calc(50% - 24px / 2);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -529,7 +589,7 @@ a {
   left: 24px;
   right: 78px;
   top: calc(50% - 24px / 2);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -555,7 +615,7 @@ a {
   left: 24px;
   right: 78px;
   top: calc(50% - 24px / 2);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -585,7 +645,7 @@ a {
 .contact {
   position: relative;
   padding: 6.4375rem 1.5rem 1.5rem;
-  z-index: 10;
+  z-index: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -704,6 +764,11 @@ a {
     padding: 7.125rem;
   }
 
+  .intro-section {
+    padding-right: 240px;
+    padding-left: 240px;
+  }
+
   .about-card {
     flex-basis: 37rem;
   }
@@ -715,6 +780,10 @@ a {
   .contact {
     padding: 8.875rem;
     padding-bottom: 7.9rem;
+  }
+
+  #hidden-menu {
+    display: none;
   }
 
   .contact-title h2 {
