@@ -282,7 +282,6 @@ a {
     right: 0;
     background-color: #6070ff;
     mix-blend-mode: multiply;
-    opacity: 0;
     transition: opacity 0.5s ease-in-out;
   }
 
@@ -298,7 +297,6 @@ a {
     left: 0;
     right: 0;
     backdrop-filter: blur(6px);
-    opacity: 0;
     transition: opacity 0.5s ease-in-out;
   }
 
@@ -453,7 +451,6 @@ a {
 
   .new-container {
     margin-top: 219px;
-    /* width: 920px; */
   }
 }
 
