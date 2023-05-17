@@ -130,7 +130,7 @@ function openPopup() {
     projectLinkLive.href = project.liveLink;
     projectLinkSource.href = project.sourceLink;
 
-    overlay.style.display = "block";
+    overlay.style.display = "flex";
 
     closeModalButton.addEventListener("click", closePopup);
 }
