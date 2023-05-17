@@ -42,32 +42,6 @@ function handleResize() {
 
 window.addEventListener("resize", handleResize);
 
-// Function to open the popup and display project details
-function openPopup() {
-    // Get the popup elements
-    const overlay = document.querySelector(".overlay");
-    const closeModalButton = document.querySelector(".closeModal");
-
-    // Show the popup overlay
-    overlay.style.display = "block";
-
-    // Add event listener to close the popup when the close button is clicked
-    closeModalButton.addEventListener("click", closePopup);
-}
-
-// Function to close the popup
-function closePopup() {
-    // Get the popup overlay
-    const overlay = document.querySelector(".overlay");
-
-    // Hide the popup overlay
-    overlay.style.display = "none";
-}
-
-// Add event listener to the "See Project" button
-const seeProjectButton = document.querySelector(".btn");
-seeProjectButton.addEventListener("click", openPopup);
-
 // Project data
 const projects = [
     {
@@ -115,6 +89,56 @@ const projects = [
         sourceLink: "https://github.com/example/professional-art-printing"
     }
 ];
+
+const seeProjectButtons = document.querySelectorAll(".btn");
+seeProjectButtons.forEach((button) => {
+    button.addEventListener("click", openPopup);
+});
+
+function openPopup() {
+    const overlay = document.querySelector(".overlay");
+    const closeModalButton = overlay.querySelector(".closeModal");
+    // Get the index of the project from the data attribute
+    const projectIndex = parseInt(this.getAttribute("data-project-index"));
+    const project = projects[projectIndex];
+
+    const projectName = overlay.querySelector(".project-name");
+    const projectFeature = overlay.querySelector(".project-feature");
+    const projectBackground = overlay.querySelector(".project-background");
+    const projectYear = overlay.querySelector(".project-year");
+    const projectImage = overlay.querySelector(".project-image");
+    const projectDescription = overlay.querySelector(".project-description");
+    const projectTool1 = overlay.querySelector(".project-tool1");
+    const projectTool2 = overlay.querySelector(".project-tool2");
+    const projectTool3 = overlay.querySelector(".project-tool3");
+    const projectLinkLive = overlay.querySelector(".project-linkLive");
+    const projectLinkSource = overlay.querySelector(".project-linkSource");
+
+    projectName.textContent = project.name;
+    projectFeature.textContent = project.feature;
+    projectBackground.textContent = project.backround;
+    projectYear.textContent = project.year;
+    projectImage.src = project.featuredImage;
+    projectDescription.textContent = project.description;
+    [projectTool1, projectTool2, projectTool3].forEach((tool, index) => {
+        if (index < project.technologies.length) {
+            tool.textContent = project.technologies[index];
+        } else {
+            tool.textContent = "";
+        }
+    });
+    projectLinkLive.href = project.liveLink;
+    projectLinkSource.href = project.sourceLink;
+
+    overlay.style.display = "block";
+
+    closeModalButton.addEventListener("click", closePopup);
+}
+
+function closePopup() {
+    const overlay = document.querySelector(".overlay");
+    overlay.style.display = "none";
+}
 
 // Function to create the modal popup dynamically
 function createModal() {
