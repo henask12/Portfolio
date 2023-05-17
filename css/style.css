@@ -54,7 +54,17 @@ a {
   padding: 16px 24px;
   align-items: center;
   justify-content: space-between;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;/* Update with desired background color */
+  z-index: 999; /* Ensure the navbar is above other elements */
+}
+
+.NavBar.white-bg {
+  background-color: rgb(113, 151, 254);
+  height: 6.5%;
 }
 
 .navigation-bar_hamburger {

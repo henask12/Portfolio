@@ -2,6 +2,9 @@ var btn = document.querySelector("#hamburger-btn");
 var closeBtn = document.querySelector("#close-btn");
 var hiddenMenuBg = document.querySelector("#hidden-menu-background");
 var hiddenMenu = document.querySelector("#hidden-menu");
+var anchorMenu = document.querySelector(".anchor");
+var anchorMenu1 = document.querySelector(".anchor1");
+var anchorMenu2 = document.querySelector(".anchor2");
 var isMenuOpen = false;
 
 function openMenu() {
@@ -32,6 +35,16 @@ btn.addEventListener("click", function () {
     }
 });
 
+anchorMenu.addEventListener("click", function () {
+    closeMenu();
+});
+anchorMenu1.addEventListener("click", function () {
+    closeMenu();
+});
+anchorMenu2.addEventListener("click", function () {
+    closeMenu();
+});
+
 closeBtn.addEventListener("click", closeMenu);
 
 function handleResize() {
@@ -41,3 +54,17 @@ function handleResize() {
 }
 
 window.addEventListener("resize", handleResize);
+
+window.addEventListener("scroll", function () {
+    const contactSection = document.getElementById("contact");
+    const navBar = document.querySelector(".NavBar");
+
+    const contactSectionTop = contactSection.offsetTop;
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition >= contactSectionTop) {
+        navBar.classList.add("white-bg");
+    } else {
+        navBar.classList.remove("white-bg");
+    }
+});
