@@ -54,17 +54,7 @@ a {
   padding: 16px 24px;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: transparent;/* Update with desired background color */
-  z-index: 999; /* Ensure the navbar is above other elements */
-}
-
-.NavBar.white-bg {
-  background-color: rgb(113, 151, 254);
-  height: 6.5%;
+  position: relative;
 }
 
 .navigation-bar_hamburger {
@@ -292,6 +282,7 @@ a {
     right: 0;
     background-color: #6070ff;
     mix-blend-mode: multiply;
+    opacity: 0;
     transition: opacity 0.5s ease-in-out;
   }
 
@@ -307,6 +298,7 @@ a {
     left: 0;
     right: 0;
     backdrop-filter: blur(6px);
+    opacity: 0;
     transition: opacity 0.5s ease-in-out;
   }
 
@@ -461,6 +453,7 @@ a {
 
   .new-container {
     margin-top: 219px;
+    /* width: 920px; */
   }
 }
 
