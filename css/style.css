@@ -300,7 +300,6 @@ a {
     backdrop-filter: blur(6px);
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
-   
   }
 
   #menu-options {
