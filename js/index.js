@@ -53,112 +53,116 @@ function handleResize() {
   }
 }
 
-window.addEventListener("resize", handleResize);
+window.addEventListener('resize', handleResize);
 
 // Project data
 const projects = [
-    {
-        name: "Tonic",
-        feature: "CANOPY",
-        backround: "Back End Dev",
-        year: "2015",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        featuredImage: "./images/tonic-project-desktop.svg",
-        technologies: ["HTML", "CSS", "JavaScript"],
-        liveLink: "https://example.com/tonic",
-        sourceLink: "https://github.com/example/tonic"
-    },
-    {
-        name: "Multi-Post Stories",
-        feature: "CANOPY",
-        backround: "Back End Dev",
-        year: "2015",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        featuredImage: "./images/multi-post-project.png",
-        technologies: ["HTML", "CSS", "JavaScript"],
-        liveLink: "https://example.com/multi-post-stories",
-        sourceLink: "https://github.com/example/multi-post-stories"
-    },
-    {
-        name: "Tonic Orange",
-        feature: "CANOPY",
-        backround: "Back End Dev",
-        year: "2015",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        featuredImage: "./images/tonic-orange.png",
-        technologies: ["HTML", "CSS", "JavaScript"],
-        liveLink: "https://example.com/tonic-orange",
-        sourceLink: "https://github.com/example/tonic-orange"
-    },
-    {
-        name: "Professional Art Printing",
-        feature: "CANOPY",
-        backround: "Back End Dev",
-        year: "2015",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        featuredImage: "./images/prof-art-project.png",
-        technologies: ["HTML", "CSS", "JavaScript"],
-        liveLink: "https://example.com/professional-art-printing",
-        sourceLink: "https://github.com/example/professional-art-printing"
-    }
+  {
+    name: 'Tonic',
+    feature: 'CANOPY',
+    backround: 'Back End Dev',
+    year: '2015',
+    description:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    featuredImage: './images/tonic-project-desktop.svg',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    liveLink: 'https://example.com/tonic',
+    sourceLink: 'https://github.com/example/tonic',
+  },
+  {
+    name: 'Multi-Post Stories',
+    feature: 'CANOPY',
+    backround: 'Back End Dev',
+    year: '2015',
+    description:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    featuredImage: './images/multi-post-project.png',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    liveLink: 'https://example.com/multi-post-stories',
+    sourceLink: 'https://github.com/example/multi-post-stories',
+  },
+  {
+    name: 'Tonic Orange',
+    feature: 'CANOPY',
+    backround: 'Back End Dev',
+    year: '2015',
+    description:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    featuredImage: './images/tonic-orange.png',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    liveLink: 'https://example.com/tonic-orange',
+    sourceLink: 'https://github.com/example/tonic-orange',
+  },
+  {
+    name: 'Professional Art Printing',
+    feature: 'CANOPY',
+    backround: 'Back End Dev',
+    year: '2015',
+    description:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    featuredImage: './images/prof-art-project.png',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    liveLink: 'https://example.com/professional-art-printing',
+    sourceLink: 'https://github.com/example/professional-art-printing',
+  },
 ];
 
-const seeProjectButtons = document.querySelectorAll(".btn");
-seeProjectButtons.forEach((button) => {
-    button.addEventListener("click", openPopup);
-});
+const seeProjectButtons = document.querySelectorAll('.btn');
 
 function openPopup() {
-    const overlay = document.querySelector(".overlay");
-    const closeModalButton = overlay.querySelector(".closeModal");
-    // Get the index of the project from the data attribute
-    const projectIndex = parseInt(this.getAttribute("data-project-index"));
-    const project = projects[projectIndex];
+  const overlay = document.querySelector('.overlay');
+  const closeModalButton = overlay.querySelector('.closeModal');
+  // Get the index of the project from the data attribute
+  const projectIndex = parseInt(this.getAttribute('data-project-index'), 10);
+  const project = projects[projectIndex];
 
-    const projectName = overlay.querySelector(".project-name");
-    const projectFeature = overlay.querySelector(".project-feature");
-    const projectBackground = overlay.querySelector(".project-background");
-    const projectYear = overlay.querySelector(".project-year");
-    const projectImage = overlay.querySelector(".project-image");
-    const projectDescription = overlay.querySelector(".project-description");
-    const projectTool1 = overlay.querySelector(".project-tool1");
-    const projectTool2 = overlay.querySelector(".project-tool2");
-    const projectTool3 = overlay.querySelector(".project-tool3");
-    const projectLinkLive = overlay.querySelector(".project-linkLive");
-    const projectLinkSource = overlay.querySelector(".project-linkSource");
+  const projectName = overlay.querySelector('.project-name');
+  const projectFeature = overlay.querySelector('.project-feature');
+  const projectBackground = overlay.querySelector('.project-background');
+  const projectYear = overlay.querySelector('.project-year');
+  const projectImage = overlay.querySelector('.project-image');
+  const projectDescription = overlay.querySelector('.project-description');
+  const projectTool1 = overlay.querySelector('.project-tool1');
+  const projectTool2 = overlay.querySelector('.project-tool2');
+  const projectTool3 = overlay.querySelector('.project-tool3');
+  const projectLinkLive = overlay.querySelector('.project-linkLive');
+  const projectLinkSource = overlay.querySelector('.project-linkSource');
 
-    projectName.textContent = project.name;
-    projectFeature.textContent = project.feature;
-    projectBackground.textContent = project.backround;
-    projectYear.textContent = project.year;
-    projectImage.src = project.featuredImage;
-    projectDescription.textContent = project.description;
-    [projectTool1, projectTool2, projectTool3].forEach((tool, index) => {
-        if (index < project.technologies.length) {
-            tool.textContent = project.technologies[index];
-        } else {
-            tool.textContent = "";
-        }
-    });
-    projectLinkLive.href = project.liveLink;
-    projectLinkSource.href = project.sourceLink;
+  function closePopup() {
+    const overlay = document.querySelector('.overlay');
+    overlay.style.display = 'none';
+  }
 
-    overlay.style.display = "flex";
+  projectName.textContent = project.name;
+  projectFeature.textContent = project.feature;
+  projectBackground.textContent = project.backround;
+  projectYear.textContent = project.year;
+  projectImage.src = project.featuredImage;
+  projectDescription.textContent = project.description;
+  [projectTool1, projectTool2, projectTool3].forEach((tool, index) => {
+    if (index < project.technologies.length) {
+      tool.textContent = project.technologies[index];
+    } else {
+      tool.textContent = '';
+    }
+  });
+  projectLinkLive.href = project.liveLink;
+  projectLinkSource.href = project.sourceLink;
 
-    closeModalButton.addEventListener("click", closePopup);
+  overlay.style.display = 'flex';
+
+  closeModalButton.addEventListener('click', closePopup);
 }
-
-function closePopup() {
-    const overlay = document.querySelector(".overlay");
-    overlay.style.display = "none";
-}
+seeProjectButtons.forEach((button) => {
+  button.addEventListener('click', openPopup);
+});
 
 // Function to create the modal popup dynamically
 function createModal() {
-    const startingPoint = document.querySelector(".modal-popup");
-    startingPoint.insertAdjacentHTML(
-        "afterend",
-        `<div class='overlay'>
+  const startingPoint = document.querySelector('.modal-popup');
+  startingPoint.insertAdjacentHTML(
+    'afterend',
+    `<div class='overlay'>
             <section class='modal'>
                 <div class='modal-header flex'>
                     <h2 class='project-name '></h2>
@@ -196,39 +200,41 @@ function createModal() {
                     </li>
                 </ul>
             </section>
-        </div>`
-    );
+        </div>`,
+  );
 }
 
 createModal();
 
-document.getElementById("contact-form").addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent default form submission behavior
+document.getElementById('contact-form').addEventListener('submit', (event) => {
+  event.preventDefault(); // Prevent default form submission behavior
 
-    // Get the contact form element
-    var emailInput = document.getElementById("email");
-    var errorMessageSpan = document.getElementById("error-message-span");
+  // Get the contact form element
+  const emailInput = document.getElementById('email');
+  const errorMessageSpan = document.getElementById('error-message-span');
 
-    // Check if the email value is lowercase
-    if (emailInput.value !== emailInput.value.toLowerCase()) {
-        // Show error message
-        errorMessageSpan.textContent = "Email should be in lower case.";
-        errorMessageSpan.style.display = "block";
-        errorMessageSpan.style.color = "red";
-        errorMessageSpan.style.fontSize = "14px";
-        errorMessageSpan.style.transform = "none";
-        errorMessageSpan.style.marginTop = "5px";
-    } else {
-        // Hide error message
-        errorMessageSpan.style.display = "none";
-        errorMessageSpan.style.color = "";
-        errorMessageSpan.style.fontSize = "";
-        errorMessageSpan.style.transform = "";
-        errorMessageSpan.style.marginTop = "";
+  // Check if the email value is lowercase
+  if (emailInput.value !== emailInput.value.toLowerCase()) {
+    // Show error message
+    errorMessageSpan.textContent = 'Email should be in lower case.';
+    errorMessageSpan.style.display = 'block';
+    errorMessageSpan.style.color = 'red';
+    errorMessageSpan.style.fontSize = '14px';
+    errorMessageSpan.style.transform = 'none';
+    errorMessageSpan.style.marginTop = '5px';
+  } else {
+    // Hide error message
+    errorMessageSpan.style.display = 'none';
+    errorMessageSpan.style.color = '';
+    errorMessageSpan.style.fontSize = '';
+    errorMessageSpan.style.transform = '';
+    errorMessageSpan.style.marginTop = '';
 
-        // Submit the form
-        event.target.submit();
-    }
+    // Submit the form
+    event.target.submit();
+  }
+});
+
 window.addEventListener('resize', handleResize);
 
 window.addEventListener('scroll', () => {
