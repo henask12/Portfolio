@@ -886,7 +886,7 @@ a {
   display: none;
   backdrop-filter: blur(6px); /* Add blur effect */
   padding: 0 142px;
-  overflow:auto;
+  overflow: auto;
 }
 
 .modal {

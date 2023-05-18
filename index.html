@@ -342,7 +342,7 @@
           <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
             I’d love to help with it!</p>
         </div>
-        <form action="https://formspree.io/f/xyyaojgk" method="post">
+        <form id="contact-form" action="https://formspree.io/f/xyyaojgk" method="post">
           <ul class="ul">
             <li>
               <input type="text" name="name" id="name" class="input" placeholder="Full Name" maxlength="30" required>
@@ -354,7 +354,8 @@
               <textarea name="" id="" cols="30" rows="10" placeholder="Write your message here..." maxlength="500" required></textarea>
             </li>
             <li>
-              <input type="submit" class="contact-btn" value="Get in touch">
+              <span id="error-message-span"></span>
+              <input type="submit" id="contact-btn" class="contact-btn" value="Get in touch">
             </li>
           </ul>
         </form>
