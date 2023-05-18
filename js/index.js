@@ -49,9 +49,9 @@ const projects = [
         feature: "CANOPY",
         backround: "Back End Dev",
         year: "2015",
-        description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         featuredImage: "./images/tonic-project-desktop.svg",
-        technologies: ["html", "css", "javascript"],
+        technologies: ["HTML", "CSS", "JavaScript"],
         liveLink: "https://example.com/tonic",
         sourceLink: "https://github.com/example/tonic"
     },
@@ -60,9 +60,9 @@ const projects = [
         feature: "CANOPY",
         backround: "Back End Dev",
         year: "2015",
-        description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         featuredImage: "./images/multi-post-project.png",
-        technologies: ["html", "css", "javascript"],
+        technologies: ["HTML", "CSS", "JavaScript"],
         liveLink: "https://example.com/multi-post-stories",
         sourceLink: "https://github.com/example/multi-post-stories"
     },
@@ -71,9 +71,9 @@ const projects = [
         feature: "CANOPY",
         backround: "Back End Dev",
         year: "2015",
-        description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         featuredImage: "./images/tonic-orange.png",
-        technologies: ["html", "css", "javascript"],
+        technologies: ["HTML", "CSS", "JavaScript"],
         liveLink: "https://example.com/tonic-orange",
         sourceLink: "https://github.com/example/tonic-orange"
     },
@@ -82,9 +82,9 @@ const projects = [
         feature: "CANOPY",
         backround: "Back End Dev",
         year: "2015",
-        description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         featuredImage: "./images/prof-art-project.png",
-        technologies: ["html", "css", "javascript"],
+        technologies: ["HTML", "CSS", "JavaScript"],
         liveLink: "https://example.com/professional-art-printing",
         sourceLink: "https://github.com/example/professional-art-printing"
     }
@@ -167,16 +167,17 @@ function createModal() {
                     </li>
                     <li class="modal-dsc-second flex">
                         <div class='flex'>
-                            <p class="project-tool1 "></p>
-                            <p class="project-tool2 "></p>
+                            <p class="project-tool1"></p>
+                            <p class="project-tool2"></p>
                             <p class="project-tool3"></p>
                         </div>
+                        <hr class="modal-line"></hr>
                         <ul class='modal-btn ul flex'>
-                            <li>
-                                <a href='' class="btn link project-linkLive  background">See Live</a>
+                            <li class="flex">
+                                <a href='' class="btn link project-linkLive background">See Live <i class="bi bi-arrow-up-right-circle"></i></a>
                             </li>
-                            <li>
-                                <a href='' class="btn link project-linkSource  background">See Source</a>
+                            <li class="flex">
+                                <a href='' class="btn link project-linkSource background">See Source <i class="bi bi-github" style="min-height: 18px"></i></a>
                             </li>
                         </ul>
                     </li>
