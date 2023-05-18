@@ -1254,13 +1254,4 @@ a {
     width: max(12px, 0.84vw);
     margin: 12px;
   }
-
-  /* Additional styles for mobile responsiveness */
-
-  /* @media screen and (max-width: 767px) {
-  .modal {
-    top: 50%;
-    max-height: 100vh;
-  }
-} */
 }
