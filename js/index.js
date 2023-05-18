@@ -113,7 +113,12 @@ function openPopup() {
   const overlay = document.querySelector('.overlay');
   const closeModalButton = overlay.querySelector('.closeModal');
   // Get the index of the project from the data attribute
-  const projectIndex = parseInt(this.getAttribute('data-project-index'), 10);
+  const projectButtons = Array.from(document.querySelectorAll('.btn'));
+
+  // Get the index of the clicked button dynamically
+  const projectIndex = projectButtons.indexOf(this);
+
+  //   const projectIndex = parseInt(this.getAttribute('data-project-index'), 10);
   const project = projects[projectIndex];
 
   const projectName = overlay.querySelector('.project-name');
