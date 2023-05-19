@@ -394,6 +394,7 @@ a {
     height: fit-content;
     box-shadow: 100vw 100vh;
     overflow: auto;
+    max-height: 115%;
   }
 
   .modal-header {
