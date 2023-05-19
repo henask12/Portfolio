@@ -1253,64 +1253,6 @@ a {
     align-items: center;
   }
 
-  .modal {
-    background-color: #fff;
-    padding: 24px;
-    border-radius: 14px;
-    width: 80.13vw;
-    box-shadow: 100vw 100vh;
-    margin: 77px 0;
-  }
-
-  .modal-header {
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 20px;
-    vertical-align: top;
-  }
-
-  .modal-header .project-name {
-    margin: 0;
-  }
-
-  .modal-feature {
-    margin-bottom: 20px;
-  }
-
-  .modal-feature .project-feature {
-    margin: 0;
-  }
-
-  .modal-feature ul {
-
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
- 
-  .modal-dsc li {
-    margin-bottom: 10px;
-  }
-
-  .modal-btn li {
-    margin-right: 10px;
-  }
-
-  .modal-image {
-    width: 100%;
-    max-height: 586px;
-    object-fit: cover;
-    border-radius: 14px;
-    margin-bottom: 20px;
-  }
-
-  .modal-dsc {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-  }
-
   .closeModal {
     cursor: pointer;
     width: max(12px, 0.84vw);
