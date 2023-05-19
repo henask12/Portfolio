@@ -696,10 +696,10 @@ a {
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    padding: 24px;
     border-radius: 14px;
     width: 100%;
     height: fit-content;
+    padding-top: 50px;
     box-shadow: 100vw 100vh;
     overflow: auto;
   }
