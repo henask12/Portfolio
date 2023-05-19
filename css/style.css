@@ -380,6 +380,8 @@ a {
     backdrop-filter: blur(6px); /* Add blur effect */
     padding: 50px 16px;
     overflow: auto;
+    justify-content: center;
+    align-items: center;
   }
 
   .modal {
@@ -686,6 +688,8 @@ a {
     backdrop-filter: blur(6px); /* Add blur effect */
     padding: 77px 142px;
     overflow: auto;
+    justify-content: center;
+    align-items: center;
   }
 
   .modal {
@@ -1199,6 +1203,8 @@ a {
     backdrop-filter: blur(6px); /* Add blur effect */
     padding: 0 142px;
     overflow: auto;
+    justify-content: center;
+    align-items: center;
   }
 
   .modal {
