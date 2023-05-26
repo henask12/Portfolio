@@ -1,59 +1,59 @@
-const btn = document.querySelector('#hamburger-btn');
-const closeBtn = document.querySelector('#close-btn');
-const hiddenMenuBg = document.querySelector('#hidden-menu-background');
-const hiddenMenu = document.querySelector('#hidden-menu');
-const anchorMenu = document.querySelector('.anchor');
-const anchorMenu1 = document.querySelector('.anchor1');
-const anchorMenu2 = document.querySelector('.anchor2');
+const btn = document.querySelector("#hamburger-btn");
+const closeBtn = document.querySelector("#close-btn");
+const hiddenMenuBg = document.querySelector("#hidden-menu-background");
+const hiddenMenu = document.querySelector("#hidden-menu");
+const anchorMenu = document.querySelector(".anchor");
+const anchorMenu1 = document.querySelector(".anchor1");
+const anchorMenu2 = document.querySelector(".anchor2");
 let isMenuOpen = false;
 
 function openMenu() {
-  hiddenMenuBg.style.display = 'initial';
-  hiddenMenu.style.display = 'initial';
-  setTimeout(() => {
-    hiddenMenuBg.style.opacity = 1;
-    hiddenMenu.style.opacity = 1;
-  }, 10);
-  isMenuOpen = true;
+    hiddenMenuBg.style.display = "initial";
+    hiddenMenu.style.display = "initial";
+    setTimeout(() => {
+        hiddenMenuBg.style.opacity = 1;
+        hiddenMenu.style.opacity = 1;
+    }, 10);
+    isMenuOpen = true;
 }
 
 function closeMenu() {
-  hiddenMenuBg.style.opacity = 0;
-  hiddenMenu.style.opacity = 0;
-  setTimeout(() => {
-    hiddenMenuBg.style.display = 'none';
-    hiddenMenu.style.display = 'none';
-  }, 300);
-  isMenuOpen = false;
+    hiddenMenuBg.style.opacity = 0;
+    hiddenMenu.style.opacity = 0;
+    setTimeout(() => {
+        hiddenMenuBg.style.display = "none";
+        hiddenMenu.style.display = "none";
+    }, 300);
+    isMenuOpen = false;
 }
 
-btn.addEventListener('click', () => {
-  if (!isMenuOpen) {
-    openMenu();
-  } else {
+btn.addEventListener("click", () => {
+    if (!isMenuOpen) {
+        openMenu();
+    } else {
+        closeMenu();
+    }
+});
+
+anchorMenu.addEventListener("click", () => {
     closeMenu();
-  }
+});
+anchorMenu1.addEventListener("click", () => {
+    closeMenu();
+});
+anchorMenu2.addEventListener("click", () => {
+    closeMenu();
 });
 
-anchorMenu.addEventListener('click', () => {
-  closeMenu();
-});
-anchorMenu1.addEventListener('click', () => {
-  closeMenu();
-});
-anchorMenu2.addEventListener('click', () => {
-  closeMenu();
-});
-
-closeBtn.addEventListener('click', closeMenu);
+closeBtn.addEventListener("click", closeMenu);
 
 function handleResize() {
-  if (window.innerWidth > 768 && isMenuOpen) {
-    closeMenu();
-  }
+    if (window.innerWidth > 768 && isMenuOpen) {
+        closeMenu();
+    }
 }
 
-window.addEventListener('resize', handleResize);
+window.addEventListener("resize", handleResize);
 
 // const portfolioSection = document.getElementById('portfolio');
 
@@ -64,10 +64,10 @@ window.addEventListener('resize', handleResize);
 
 // Function to create the modal popup dynamically
 function createModal() {
-  const startingPoint = document.querySelector('.modal-popup');
-  startingPoint.insertAdjacentHTML(
-    'afterend',
-    `<div class='overlay'>
+    const startingPoint = document.querySelector(".modal-popup");
+    startingPoint.insertAdjacentHTML(
+        "afterend",
+        `<div class='overlay'>
             <section class='modal'>
                 <div class='modal-header flex'>
                     <h2 class='project-name '></h2>
@@ -105,53 +105,53 @@ function createModal() {
                     </li>
                 </ul>
             </section>
-        </div>`,
-  );
+        </div>`
+    );
 }
 
 createModal();
 
-document.getElementById('contact-form').addEventListener('submit', (event) => {
-  event.preventDefault(); // Prevent default form submission behavior
+document.getElementById("contact-form").addEventListener("submit", (event) => {
+    event.preventDefault(); // Prevent default form submission behavior
 
-  // Get the contact form element
-  const emailInput = document.getElementById('email');
-  const errorMessageSpan = document.getElementById('error-message-span');
+    // Get the contact form element
+    const emailInput = document.getElementById("email");
+    const errorMessageSpan = document.getElementById("error-message-span");
 
-  // Check if the email value is lowercase
-  if (emailInput.value !== emailInput.value.toLowerCase()) {
-    // Show error message
-    errorMessageSpan.textContent = 'Email should be in lower case.';
-    errorMessageSpan.style.display = 'block';
-    errorMessageSpan.style.color = 'red';
-    errorMessageSpan.style.fontSize = '14px';
-    errorMessageSpan.style.transform = 'none';
-    errorMessageSpan.style.marginTop = '5px';
-  } else {
-    // Hide error message
-    errorMessageSpan.style.display = 'none';
-    errorMessageSpan.style.color = '';
-    errorMessageSpan.style.fontSize = '';
-    errorMessageSpan.style.transform = '';
-    errorMessageSpan.style.marginTop = '';
+    // Check if the email value is lowercase
+    if (emailInput.value === emailInput.value.toLowerCase()) {
+        // Show error message
+        errorMessageSpan.textContent = "Email should be in lower case.";
+        errorMessageSpan.style.display = "block";
+        errorMessageSpan.style.color = "red";
+        errorMessageSpan.style.fontSize = "14px";
+        errorMessageSpan.style.transform = "none";
+        errorMessageSpan.style.marginTop = "5px";
+    } else {
+        // Hide error message
+        errorMessageSpan.style.display = "none";
+        errorMessageSpan.style.color = "";
+        errorMessageSpan.style.fontSize = "";
+        errorMessageSpan.style.transform = "";
+        errorMessageSpan.style.marginTop = "";
 
-    // Submit the form
-    event.target.submit();
-  }
+        // Submit the form
+        event.target.submit();
+    }
 });
 
-window.addEventListener('resize', handleResize);
+window.addEventListener("resize", handleResize);
 
-window.addEventListener('scroll', () => {
-  const contactSection = document.getElementById('contact');
-  const navBar = document.querySelector('.NavBar');
+window.addEventListener("scroll", () => {
+    const contactSection = document.getElementById("contact");
+    const navBar = document.querySelector(".NavBar");
 
-  const contactSectionTop = contactSection.offsetTop;
-  const scrollPosition = window.scrollY;
+    const contactSectionTop = contactSection.offsetTop;
+    const scrollPosition = window.scrollY;
 
-  if (scrollPosition >= contactSectionTop) {
-    navBar.classList.add('white-bg');
-  } else {
-    navBar.classList.remove('white-bg');
-  }
+    if (scrollPosition >= contactSectionTop) {
+        navBar.classList.add("white-bg");
+    } else {
+        navBar.classList.remove("white-bg");
+    }
 });
